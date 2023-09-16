@@ -1,0 +1,16 @@
+<resources>
+    <string name="enter_amount">Enter amount</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="clear_icon">Clear icon</string>
+    <string name="error">Error</string>
+
+    <string-array name="quotes">
+        <item name="quote_1">Exchange rates may fluctuate, but your potential for growth remains constant. Convert wisely, prosper greatly.</item>
+        <item name="quote_2">Unlock the power of global possibilities. Convert currencies, embrace opportunities.</item>
+        <item name="quote_3">Exchange your limits for possibilities and convert dreams into reality.</item>
+        <item name="quote_4">Let the currency of determination drive you towards success with every conversion.</item>
+        <item name="quote_5">Every trade in life adds value to your journey; choose to exchange negativity for positivity.</item>
+    </string-array>
+
+    <string name="no_internet_connection">Oops! It looks like you\'re not connected to the internet. Please check your network connection and try again.</string>
+</resources>

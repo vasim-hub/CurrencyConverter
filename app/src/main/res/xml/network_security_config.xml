@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config>
+        <!-- Optionally, you can include a debug-config for debug builds -->
+        <!--
+        <debug-overrides>
+            <trust-anchors>
+                <certificates src="system" />
+                <certificates src="user" />
+            </trust-anchors>
+        </debug-overrides>
+        -->
+        <trust-anchors>
+            <!-- Add your custom certificate here if needed -->
+            <!--
+            <certificates src="@raw/example" />
+            -->
+            <!-- Add other trusted certificates, if any -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Add network security configuration for the specific domain -->
+    <domain-config cleartextTrafficPermitted="true"> <!-- Set this to "false" if you want to block cleartext (HTTP) traffic -->
+        <domain includeSubdomains="true">openexchangerates.org</domain>
+        <!-- Optionally, you can add subdomains -->
+        <!--
+        <domain>api.openexchangerates.org</domain>
+        -->
+        <!-- Optionally, you can add more domains -->
+    </domain-config>
+</network-security-config>
